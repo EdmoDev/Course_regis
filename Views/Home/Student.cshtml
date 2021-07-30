@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewData["Title"] = "Student";
+}
+
+<h1>Student</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Email</td>
+            <td>Phone</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var inst in ViewBag.Students)
+        {
+            <tr>
+                <td>@inst.StudentId</td>
+                <td>@inst.FirstName</td>
+                <td>@inst.LastName</td>
+                <td>@inst.Email</td>
+                <td>@inst.Phone</td>
+            </tr>
+        }
+    </tbody>
+</table>

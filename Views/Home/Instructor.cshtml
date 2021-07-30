@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "Instructor";
+}
+
+<h1>Instructor</h1>
+
+@*use bootstrap table*@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Email</td>
+            <td>Course</td>
+        </tr>
+    </thead>
+    <tbody>
+        @*iterate the Instructors object*@
+        @foreach (var inst in ViewBag.Instructors)
+        {
+            <tr>
+                <td>@inst.InstructorId</td>
+                <td>@inst.FirstName</td>
+                <td>@inst.LastName</td>
+                <td>@inst.Email</td>
+                <td>@inst.Course</td>
+            </tr>
+        }
+    </tbody>
+</table>
