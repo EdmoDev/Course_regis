@@ -22,41 +22,41 @@ namespace Web_App.Controllers
 new Instructor()
 {
 InstructorId = 101,
-FirstName = "John" ,
-LastName = "Darth" ,
-Email = "john@test.com" ,
+FirstName = "Johan" ,
+LastName = "Smith" ,
+Email = "Johan@robersoncollege.com" ,
 Course = "Java" ,
 },
 new Instructor()
 {
 InstructorId = 102,
-FirstName = "Hile" ,
-LastName = "Atlas" ,
-Email = "Atlas@test.com" ,
+FirstName = "Hanna" ,
+LastName = "Johnson" ,
+Email = "Johnson@robersoncollege.com" ,
 Course = "C" ,
 },
 new Instructor()
 {
 InstructorId = 103,
-FirstName = "Jack" ,
-LastName = "Connor" ,
-Email = "jack@test.com" ,
+FirstName = "Kyle" ,
+LastName = "Derrek" ,
+Email = "Derrek@robersoncollege.com" ,
 Course = "C++" ,
 },
 new Instructor()
 {
 InstructorId = 104,
-FirstName = "Harry" ,
-LastName = "Callum" ,
-Email = "Callum@test.com" ,
+FirstName = "Dier" ,
+LastName = "Oddy" ,
+Email = "Oddy@robersoncollege.com" ,
 Course = ".Net" ,
 },
 new Instructor()
 {
 InstructorId = 105,
-FirstName = "Jacob" ,
-LastName = "Seth" ,
-Email = "Jacob@test.com" ,
+FirstName = "Oddete" ,
+LastName = "Dockson" ,
+Email = "Dockson@robersoncollege.com" ,
 Course = "SQL" ,
 }
 };
@@ -65,28 +65,28 @@ Course = "SQL" ,
 new Student()
 {
 StudentId = 201,
-FirstName = "Charlie",
-LastName = "Kyle",
-Email = "Kyle@test.com",
-Phone = "202-555-0158",
+FirstName = "Odoi",
+LastName = "Mcphee",
+Email = "Mcphee@robersoncollege.com",
+Phone = "305-758-0674",
 Course = "Java"
 },
 new Student()
 {
 StudentId = 202,
-FirstName = "George",
-LastName = "Reece",
-Email = "Reecee@test.com",
-Phone = "202-555-0117",
+FirstName = "Deann",
+LastName = "Jays",
+Email = "Jays@robersoncollege.com",
+Phone = "305-325-3425",
 Course = "Java"
 },
 new Student()
 {
 StudentId = 203,
-FirstName = "Oscar",
-LastName = "Rhys",
-Email = "Rhys@test.com",
-Phone = "202-555-0189",
+FirstName = "brianna",
+LastName = "Handson",
+Email = "Handson@robersoncollege.com",
+Phone = "305-532-3522",
 Course = "SQL"
 },
 new Student()
@@ -94,17 +94,17 @@ new Student()
 StudentId = 204,
 FirstName = "James",
 LastName = "Charlie",
-Email = "Charlie@test.com",
-Phone = "202-555-0426",
+Email = "Charlie@robersoncollege.com",
+Phone = "305-462-3521",
 Course = "C++"
 },
 new Student()
 {
 StudentId = 205,
-FirstName = "William",
-LastName = "Damian",
-Email = "Damian@test.com",
-Phone = "202-555-0876",
+FirstName = "Jordan",
+LastName = "Edmunds",
+Email = "Edmunds@robersoncollege.com",
+Phone = "305-555-0876",
 Course = ".Net"
 },
 };
@@ -154,12 +154,14 @@ Description = "To Learn SQL",
         }
 
         //Action method
+
+        //instructor
         public IActionResult Instructor()
         {
             ViewBag.Instructors = instructors;
             return View();
         }
-        //Student
+        //student
         public IActionResult Student()
         {
             ViewBag.Students = students;
